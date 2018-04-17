@@ -1,0 +1,226 @@
+@charset "utf-8";
+/* CSS Document */
+.navigation {
+	right:0;
+	width:55%;
+	background-position:center;
+	background-color:#f5f5f5 ;
+	right:0;
+	float:right;
+	z-index:1000;
+	position:absolute;
+}
+@media only screen and (max-width:1270px){
+	.navigation ul{
+		font-size:70%;
+	}
+	.navigation {
+		width:40%;
+	}
+	 .navigation ul ul li{
+		 width:100px;	 
+	}
+}
+.navigation ul{
+	font-family:Segoe UI Light, Arial;
+	font-size:100%;
+	font-weight:400;
+	position:relative;
+    list-style:none;
+   	margin:0;
+	padding:0;
+	color:#000;
+	padding-left:0px;         
+}
+        
+.navigation > ul > li {
+	padding-top:8px;
+	margin-top:68px;
+	padding-bottom:10px;
+	 padding-left:30px;
+	 padding-right:30px;
+	 color:#4e4e4e;
+	 position:relative;
+	 float:left;
+ 	 -webkit-transition-duration: 0.5s;
+  	 transition-duration: 0.5s;
+  	 -webkit-transition-property: color, background-color;
+  	 transition-property: color, background-color;
+	 font-weight:bolder;
+				
+}
+		
+.navigation > ul > li:hover, .navigation:focus{
+	background-color:#FFF;
+  	color:#e94939;
+	cursor:default;
+
+}
+			
+.navigation > ul > li > a {
+
+    text-decoration:none;
+	color:#4e4e4e;
+            
+}
+#hover:hover{
+	color:#e94939;
+}
+.navigation > ul > li > a:hover ul, li {
+
+    text-decoration:none;
+	color:#e94939;
+            
+}
+
+.navigation > ul > li:hover > a{
+      color:#333; 
+	  -webkit-transition: color 0.25s ease-in;
+ 	  -moz-transition: background-color 0.25s ease-in;
+	  -ms-transition: background-color 0.25s ease-in;
+ 	  -o-transition: background-color 0.25s ease-in;
+	   transition: background-color 0.25s ease-in;
+}
+.navigation ul ul{
+            position:absolute;
+            z-index:100;
+            height:0;
+            overflow: hidden;
+			-webkit-transition: height 0.3s ease-in;
+            -moz-transition: height 0.3s ease-in;
+            -o-transition: height 0.3s ease-in;
+            -ms-transition: height 0.3s ease-in;
+            transition: height 0.3s ease-in;
+			margin-left:-30px;
+			padding-top:10px;
+}
+        
+.navigation > ul > li:hover ul ul, .navigation > ul > li > a:hover ul ul{
+            height:0;
+}
+       
+.navigation ul ul ul{
+            left:170px;
+            width:170px;
+		
+}
+        
+ .navigation > ul > li:hover ul, .navigation > ul > li > a:hover ul, .navigation ul ul li:hover > ul, .navigation ul ul li a:hover > ul{
+            height:400px;
+}
+        
+       
+        .navigation ul ul li{
+			font-weight:600;
+			font-size:20px;
+			text-align:left;
+            background-color:rgba(255,255,255,.9);
+			color:#000;
+            width:260px;
+			padding:6px 40px;
+			margin:0;
+			margin-left:-10px;
+			-webkit-transition: background-color 0.3s ease;
+            -moz-transition: background-color 0.3s ease;
+            -o-transition: background-color 0.3s ease;
+            -ms-transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease;
+        }
+        
+        .navigation ul ul li:hover {
+			background-color:rgba(233,73,57,0.9);
+            color:#FFF; 
+			
+        }
+	
+        .navigation ul ul li a {
+			font-family:/*"Dutch Tulips Demo"*/"Segoe UI Light", Arial;
+			font-size:20px;
+			font-weight:bold;
+            display:inline;
+            text-decoration:none;
+			
+			color:#000;
+        }
+        .navigation ul ul li a:hover, .navigation ul ul li:hover > a {
+            color:#FFF; 
+        }
+#line {
+	background:#e94939; 
+	height:5px;
+	margin-left:-10px;
+}
+
+
+
+
+
+
+
+
+
+
+/*ul#pinlink{
+	text-decoration:none;
+	padding-top:0px;
+	font-family:"Segoe UI Light";
+	font-size:20px;
+	list-style:none;
+	text-align:center;
+	color:#671112;
+	padding-left:2px;
+	
+}
+ul#pinlink1{
+	font-family:"Segoe UI Light";
+	font-size:16px;
+	list-style:none;
+	text-align:center;
+	color:#671112;
+	padding-left:2px;
+	margin-left:19px;
+	margin-right:19px;
+	border-bottom:dotted medium #671112;
+	
+}
+li#pinli > a{
+	text-decoration:none;
+	color:#671112;
+}
+li#pinli{
+	/*background-color:#671112;*//*
+	
+	font-weight:600;
+	margin-left:19px;
+	margin-right:19px;
+	margin-top:3px;
+	padding:3px;
+	border-bottom:dotted medium #671112;
+	 -webkit-transition-duration: 0.3s;
+  	 transition-duration: 0.3s;
+  	 -webkit-transition-property: color, background-color;
+  	 transition-property: color, background-color;
+}
+	
+li#pinli:hover, li#pinli:focus{
+	background-color:#671112;
+  	color:#FFF;
+}
+li#pinli:hover > a, li#pinli:focus > a{
+  	color:#FFF;
+
+}
+li#pinli1{
+	/*background-color:#671112;*//*
+	margin-top:0px;
+	padding:0px;	
+	 -webkit-transition-duration: 0.3s;
+  	 transition-duration: 0.3s;
+  	 -webkit-transition-property: color, background-color;
+  	 transition-property: color, background-color;
+}
+li#pinli1:hover, li#pinli1:focus{
+	background-color:#FFF;
+  	color:#671112;
+
+}
